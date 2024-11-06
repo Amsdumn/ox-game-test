@@ -40,7 +40,7 @@ function App() {
     setSummary(result);
     if (result === 'win') {
       setScoreText('+1');
-      console.log('win');
+      // console.log('win');
       setWinStreak(winStreak + 1);
       let newScore = score + 1;
       if (winStreak + 1 === 3) {
@@ -51,11 +51,11 @@ function App() {
       setScore(newScore);
     } else if (result === 'lose') {
       setScoreText('-1');
-      console.log('lose');
+      // console.log('lose');
       setWinStreak(0);
       setScore(score - 1);
     } else {
-      console.log('draw');
+      // console.log('draw');
       setWinStreak(score);
     }
     setTimeout(() => {
